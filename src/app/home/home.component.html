@@ -1,0 +1,259 @@
+<nav class="navbar">
+  <a href="#" class="nav-branding"> <img src="../assets/images/logo-3.png" alt="" /></a>
+  <ul class="nav-menu">
+    <li class="nav-item" id="active"> <a id="homeSelector" href="#" class="nav-link active" (click)="changeActive('homeSelector')">Home</a></li>
+    <li class="nav-item"> <a id="aboutSelector" href="#about" class="nav-link" (click)="changeActive('aboutSelector')">About</a></li>
+    <li class="nav-item"> <a id="scheduleSelector" href="#Shedule" class="nav-link" (click)="changeActive('scheduleSelector')">Shedule</a></li>
+    <li class="nav-item"> <a id="contactSelector" href="#Contact" class="nav-link" (click)="changeActive('contactSelector')">Contact</a></li>
+  </ul>
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</nav>
+
+
+
+
+<!-- <app-pdf-viewer></app-pdf-viewer> -->
+<!------------- sub heading -->
+<div class="d-flex justify-content-between  align-items-center w-100">
+  <div><b>செவிகள் கேட்கட்டும்…👍</b></div> <div><b>செயல்கள் பேசட்டும்…👍</b></div>
+</div>
+<section class="banner">
+  <div class="sub-heading">
+    <div class="sub-con py-4">
+      <h1>சாம்பவர்வடகரை இலவச போட்டித்தேர்வு பயிற்சி மையம்</h1>
+      <!-- <h2>த</h2> -->
+    </div>
+  </div>
+</section>
+<!--banner end--------->
+
+<!-------- About ----------->
+<section id="about" class="about-section pt-5">
+  <div class="about-head">
+    <h2 class="text-center pt-5"><span style=" color: #b90f5f;">About</span> Us</h2>
+    <h3 class="text-center pt-3">முதல் கட்ட பயிற்சி வெற்றியாளர்கள்</h3>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="about-right col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <ul class="">
+          <li class="li-first">அக்னிபாத் ராணுவ வீரராக செல்வன். ரா.கண்ணன்
+            தேர்ந்தெடுக்கப்பட்டுள்ளார்.</li>
+          <li class="pt-5">TNPSC Group || & IIA முதல்நிலைத் தேர்வில் 5 பேர்
+            தேர்ச்சி.</li>
+          <li class="pt-5">TNUSRB, POLICE இரண்டாம் நிலைக் காவலர் தேர்வில் 10 பேர் தேர்ச்சி.</li>
+          <li class="pt-5">TRB, TNTET - Paper | ஆசிரியர் தகுதித் தேர்வில் 8 பேர் தேர்ச்சி.</li>
+        </ul>
+      </div>
+      <div class="about-left col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="about-img">
+          <img src="./assets/images/about img.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <h5 class="text-center pb-3"> <strong>ஊக்கப்படுத்தி உதவிக் கொண்டிருக்கும்
+        அனைத்து நல்உள்ளங்களுக்கும் நெஞ்சார்ந்த நன்றிகள்...</strong></h5>
+  </div>
+</section>
+
+<section class="Shedule-sec pt-5" id="Shedule">
+  <div class="all-head text-center pt-5">
+    <h2>Shedule</h2>
+  </div>
+  <div class="container">
+    <div class="row pt-5">
+      <div class="col-lg-3 col-md-6 about-con-1">
+        <div class="">
+          <div class="about-con mx-5">
+            <img src="../assets/images/TNPSC.png" alt="" />
+          </div>
+          <p>TNPSC</p>
+          <div class="about-list">
+            <li>Group IV</li>
+            <li>Gourp II/ 2A</li>
+            <li>Gourp I</li>
+          </div>
+        </div>
+        <div class="blink mc" (click)="selectType('GROUP','TNPSC')"><span>Test Available</span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 about-con-1">
+        <div class="">
+          <div class="about-cont mx-5">
+            <img src="../assets/images/about3.png" alt="" />
+          </div>
+          <p>SSC</p>
+          <div class="about-list">
+            <li>All SSC Exam</li>
+          </div>
+        </div>
+        <div class="blink"><span>Coming Soon</span></div>
+      </div>
+      <div class="col-lg-3 col-md-6 about-con-1">
+        <div class="">
+          <div class="about-con mx-5">
+            <img src="../assets/images/about.png" alt="" />
+          </div>
+          <p>TNUSRB</p>
+          <div class="about-list">
+            <li>Police</li>
+            <li>Fingerprint SI</li>
+            <li>SI</li>
+          </div>
+        </div>
+        <div class="blink mc" (click)="selectType('TNUSRB','TNUSRB')"><span>Test
+            Available</span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 about-con-1">
+        <div class="">
+          <div class="about-con mx-5">
+            <img src="../assets/images/Army.png" alt="" />
+          </div>
+          <p>ARMY</p>
+          <div class="about-list">
+            <li>AGNIPADH</li>
+            <li>Navy</li>
+            <li>Air Force</li>
+          </div>
+        </div>
+        <div class="blink"><span>Coming Soon</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about end...........-->
+<section class="about2 pt-5" id="about2">
+  <div class="container">
+    <div class="all-head text-center  ">
+      <h2>ஜெயித்து காட்டுவோம்.....!</h2>
+    </div>
+    <div class="row pt-2">
+      <div class="col-lg-12">
+        <div class="about2-con">
+          <p>
+            தினசரி வகுப்பு / பாடத்தொகுப்பு அதன்பின், மாதிரி தேர்வு. கணித
+            பகுதியில் முழுகவனம் செலுத்துவதற்காக தினசரி கணித வகுப்பு /
+            பாடத்தொகுப்பு நடத்தப்படும். வாரந்தோறும் ஞாயிற்றுக்கிழமை தேர்வு
+            நடைபெறும்
+
+            <br />
+            செவிகள் கேட்கட்டும்…👍 செயல்கள் பேசட்டும்…👍
+          </p>
+          <!-- <button type="button" class="btn btn-dark">Dark</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--about2------------------->
+<section class="Contact " id="Contact">
+  <div class="Contactrow pt-2">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15762.691412781394!2d77.38385651907177!3d9.002219690115579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b069d3afd762bad%3A0x3ffa9855713268ab!2sSambavarvadakarai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1677398014919!5m2!1sen!2sin"
+          width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 pt-2 d-flex justify-content-center align-items-center">
+      <div>
+        <div class="all-head  text-center">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="conact-content">
+          <div>
+            <p class="d-flex align-items-center justify-content-center"><span class="iconify icon"
+                data-icon="bi:person-fill"></span>கனக அருண் <span>+91 99652 90366</span></p>
+          </div>
+          <div class="mt-3">
+            <p class="d-flex align-items-center justify-content-center"><span class="iconify icon"
+                data-icon="bi:person-fill"></span>கருப்பசாமி<span>+91 97897 35249</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<!-------------------------- conact--------------------- -->
+<section class=" footer pt-5" id="footer">
+  <div class="container">
+    <div class="row py-5 text-center">
+      <div class="col-lg-3 col-md-6 col-sm-12 pt-3 ">
+        <h2>TNPSC</h2>
+        <li>Group IV</li>
+        <li>Gourp II/ 2A</li>
+        <li>Gourp I</li>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 pt-3">
+        <h2>SSC</h2>
+
+        <li>All SSC Exam</li>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 pt-3 ">
+        <h2>TNUSRB</h2>
+        <li>Police</li>
+        <li>Fingerprint SI</li>
+        <li>SI</li>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 pt-3">
+        <h2>ARMY</h2>
+
+        <li>AGNIPADH</li>
+        <li>Navy</li>
+        <li>Air Force</li>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content text-center">
+    <h6 style="color: #fff;padding: 8px 0px;font-size: 12px;">developed by <span style="font-weight: bold;">LAKARAM
+        Infotech..</span>
+    </h6>
+  </div>
+</section>
+
+<sl-dialog label="{{dialogBoxTitle}}" [ngClass]="{'dialog-box' : !current_url, 'dialog-pdf' : !!current_url}" class="dialog-overview "
+  *ngIf="!!documentShow">
+  <div style="width: 100%" *ngIf="selectedType == 'GROUP' && !current_url">
+    <div class="text-center">
+      <li (click)="openDialog('../assets/documents/GIV.pdf','Gourp IV')" class="mc">Group IV / <span class="text-danger">(Click)</span>
+      </li>
+      <li>Gourp II/ 2A</li>
+      <li>Gourp I</li>
+    </div>
+  </div>
+  <div style="width: 100%" *ngIf="selectedType == 'SSC' && !current_url">
+    <div class="text-center">
+      <li>All SSC Exam</li>
+    </div>
+  </div>
+  <div style="width: 100%" *ngIf="selectedType == 'TNUSRB' && !current_url">
+    <div class="text-center">
+      <li (click)="openDialog('../assets/documents/POLICE.pdf','Police')" class="mc">Police / <span class="text-danger">(Click)</span>
+      </li>
+      <li>Fingerprint SI</li>
+      <li>SI</li>
+    </div>
+  </div>
+  <div style="width: 100%" *ngIf="selectedType == 'ARMY' && !current_url">
+    <div>
+      <li>AGNIPADH</li>
+      <li>Navy</li>
+      <li>Air Force</li>
+    </div>
+  </div>
+  <div class="pdfViewer" *ngIf="!!current_url">
+    <!-- <app-pdf-viewer [pdfUrl]="pdfUrl"></app-pdf-viewer> -->
+    <div style="width: 100%">
+      <iframe id="embedded" [src]="current_url" style="height: 100vh; width: 100%"></iframe>
+    </div>
+  </div>
+</sl-dialog>
